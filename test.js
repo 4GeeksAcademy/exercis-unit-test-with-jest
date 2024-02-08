@@ -1,4 +1,5 @@
-import { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound } from './app.js';
+// import { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound } from './app.js';
+const { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound } = require ('./app.js');
 
 test('adds 14 + 9 to equal 23', () => {
   expect(sum(14, 9)).toBe(23);

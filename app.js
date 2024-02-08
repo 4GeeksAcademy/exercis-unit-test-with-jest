@@ -5,6 +5,11 @@ let oneEuroIs = {
     "GBP": 0.87, // british pound
 }
 
+//funcionsuma
+const sum = function(a, b) {
+    return a + b
+    
+}
 // Declaramos una función con el nombre exacto "formEuroToDollar"
 
 const fromEuroToDollar = function (valueInEuro) {
@@ -19,14 +24,14 @@ const fromDollarToYen = function (valueInDollar) {
     let valueInEuro = valueInDollar / 1.07;
     let valueInYen = valueInEuro * 156.5;
     // retomamos el valor a yen 
-    return valueInYen;
+    return Number(valueInYen.toFixed(2));
 }
 
 const fromYenToPound = function (valueInYen) {
     // convertimos el valor a pound
     let valueInEuro = valueInYen / 156.5;
     let valueInPound = valueInEuro * 0.87;
-    return valueInPound;
+    return Number(valueInPound.toFixed(2));
 }
-module.exports = { fromEuroToDollar, fromDollarToYen, fromYenToPound };
+module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound };
 console.log(module);
